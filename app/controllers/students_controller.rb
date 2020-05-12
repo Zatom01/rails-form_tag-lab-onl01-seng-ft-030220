@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     
-    @student = Student.create(student[first_name: params[:first_name],last_name: params[:last_name])
+    @student = Student.create(student[first_name]: params[:first_name],student[last_name]: params[:last_name])
     byebug
     redirect_to students_path 
     
